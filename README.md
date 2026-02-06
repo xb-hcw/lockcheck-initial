@@ -61,6 +61,7 @@ GET /api/slots
 POST /api/slots/{id}/lock
 POST /api/slots/{id}/unlock
 GET /api/slots/{id}
+```
 
 #Project Status
 
@@ -77,3 +78,5 @@ Planned improvements:
 - Map to locate the locker
 - payment system
 - phone application
+
+* This project focuses on logic and system design, UI might be considered in the future

@@ -69,14 +69,19 @@ This is an early-stage prototype for the locking system
 
 Planned improvements:
 
+- Admin can add/delete/update locker in some cases
+
 - User Login&Registration (Authentication)
+- Scan QR code to link the application
+- Map to locate the locker
+- payment system
+  
 - Concurrency Control
 - Real-time updates (Sensor/SignalR)
 - Integration with real locker hardware (future)
 - Physical Access to the locker
-- Scan QR code to link the application
-- Map to locate the locker
-- payment system
+
 - phone application
+
 
 * This project focuses on logic and system design, UI might be considered in the future

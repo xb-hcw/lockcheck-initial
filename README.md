@@ -63,7 +63,7 @@ POST /api/slots/{id}/unlock
 GET /api/slots/{id}
 ```
 
-#Project Status
+# Project Status
 
 This is an early-stage prototype for the locking system
 

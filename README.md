@@ -23,10 +23,6 @@ In this system:
 
 - A locked slot can be automactically released after a timeout (*)
 
-Further feature can be considered:
-- Scan QR code to link the application
-- Map to locate the locker
-
 # Reasons for this project
 
 This project is built to:
@@ -46,9 +42,38 @@ This project is built to:
 ## Frontend
 - simple web frontend (VUE/REACT)
 - REST API communication using HTTP
-
-*might migrate to phone application for further development
+  
 
 ## Basic System Flow
 
-1. 
+1. The frontend requries all slots of each locker from the backend
+2. The user choose and click lock on an available slot
+3. The backend:
+   - Check the slot status
+   - Changed it to 'locked'
+   - Creates a reservation with an expiration time (*)
+4. System will automatically unlock the locker if the slot is not used before the expiration time (with penalty*)
+
+## Example API Endpoints
+
+```http
+GET /api/slots
+POST /api/slots/{id}/lock
+POST /api/slots/{id}/unlock
+GET /api/slots/{id}
+
+#Project Status
+
+This is an early-stage prototype for the locking system
+
+Planned improvements:
+
+- User Login&Registration (Authentication)
+- Concurrency Control
+- Real-time updates (Sensor/SignalR)
+- Integration with real locker hardware (future)
+- Physical Access to the locker
+- Scan QR code to link the application
+- Map to locate the locker
+- payment system
+- phone application

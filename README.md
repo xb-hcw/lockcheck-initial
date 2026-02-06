@@ -33,4 +33,22 @@ This project is built to:
 
 - Practice C# and ASP.NET Core
 - Learn REST API Design
-- Simulate a real-world system 
+- Simulate a real-world system
+
+# Tech Stack
+
+## Backend
+- C#
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQLite (development only)
+
+## Frontend
+- simple web frontend (VUE/REACT)
+- REST API communication using HTTP
+
+*might migrate to phone application for further development
+
+## Basic System Flow
+
+1. 
